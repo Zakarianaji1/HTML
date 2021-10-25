@@ -1,0 +1,44 @@
+<head>
+    <h1><title id="title">
+       Users stories 
+    </title></h1>
+</head>
+<p id="description"></p>
+<form id="survey-form">
+    <ul class ="errorMessages"> </ul>
+    <label for="name">Entre your name :</label><br><br>
+    <input type="text" id="name" placeholder="Ex : zakaria"><br><br>
+    <label for="email">
+        Votre email :<br><br>
+        <input type="email" id="email" name="email" autocomplete="email" aria-required="true" aria-invalid="true" placeholder="Ex: exemple@domaine.fr"/>
+        
+     </label><br><br>
+     <label for="Number">
+        Votre Number :<br><br>
+        <input type="number" id="number" name="number" autocomplete="cc-number" aria-required="true" aria-invalid="true"placeholder="Ex: (1,2,3,.....,100)" />
+     
+     </label><br><br>
+   <label for="dropdown"id="dropdown"></label>
+     <select id="number" name="number" size="3">
+        <option value="name">name</option>
+        <option value="email">email</option>
+        <option value="number">number</option>
+        
+      </select><br>
+      <input type="radio" id="name" name=" name" value="name">
+      <label for="name">name 1</label><br>
+      <input type="radio" id="name" name="name" value="name">
+      <label for="name">name 2</label><br>
+      <input type="radio" id="name" name="name" value="name">
+      <label for="name">name 3</label><br><br>
+       
+      <input type="checkbox" id="value" name="value" value="value">
+      <label for="value"> value 1</label><br>
+      <input type="checkbox" id="value" name="value" value="value">
+      <label for="value"> value 2</label><br>
+      <textarea name="message" rows="10" cols="30" placeholder="Comments"></textarea><br> <br>
+    
+    <input type="submit" value="Submit">
+    
+   
+</form>
