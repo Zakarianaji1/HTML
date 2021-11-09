@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <script src='main.js'></script>
+    <script src="alert.js"></script>
+    <script src="combinations.js"></script>
+</head>
+<body>
+
+ <header>
+   <ul class="navig">
+     <li class="nv"><a href="home.html">Home</a></li>
+     <li class="nv"><a href="About.html">About Us</a></li>
+     <li class="nv"><a href="profile.html">Porfile</a></li>
+     <li class="nv"><a href="contact.html">Contact</a></li>
+   </ul>
+ </header>
+
+ <section>
+   <div class="p">
+     <p>Voltaire, a French philosopher and historian who died shortly after the American revolutionary war, left us with this warning about translations: "Woe to the makers of literal translations, who by rendering every word weaken the meaning! It is indeed by so doing that we can say the letter kills and the spirit gives life." In spite of his warnings, we bring you four translations of the phrase "Hello World".</p>
+   </div>
+   <table>
+     <thead>
+       <th ><span class="language"> Language</span></th>
+       <th id="aloha">Translation</th>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Luxembourgish</td>
+         <td>Moien Welt</td>
+       </tr>
+       <tr>
+         <td>Hawaiian</td>
+         <td> Aloha houna</td>
+       </tr>
+       <tr>
+         <td>Swahili</td>
+         <td>Salamu Dunia</td>
+       </tr>
+     
+     </tbody>
+   </table>
+   <h2><a href="https://en.wikipedia.org/wiki/Swahili_language">Swahili</a></h2>
+   <p>For additional translations, visit <a href="https://www.bing.com/translator">Bing Translator</a>.</p>
+   <p id="time"></p>
+   <p id="game"></p>
+  
+   <button onclick="Alert();">Show Alert</button>
+   <button onclick="game();">Play Game</button>
+ </section>
+ <script>
+   document.getElementById("time").innerHTML=new Date().toLocaleDateString();
+  
+   console.log("Welcome to JavaScript");
+   
+   document.getElementById("comb").innerHTML=combinations("chat");
+   function capitalize(string) {  
+     return string.split(' ').map(string => string.charAt(0).toUpperCase() + string.substring(1)).join(' '); 
+   }
+   console.log(capitalize("hello , have a nice day")); 
+ </script>
+
+</body>
+</html>
